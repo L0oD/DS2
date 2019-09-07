@@ -1,5 +1,7 @@
 const connection = require('../mysql-connection')
 
+
+
               module.exports = {
                 find: (callback) => {
                     connection.query('SELECT * FROM produto', callback);
