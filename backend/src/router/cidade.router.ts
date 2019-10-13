@@ -10,7 +10,10 @@ class CidadeRouter{
     }
     private init(){
         this.router.get('/', CidadeController.find);
-        this.router.post('/', CidadeController.creat);
+        this.router.post('/', CidadeController.create);
+        this.router.get('/:id([0-9]+)', CidadeController.findById);
+        this.router.put('/:id([0-9]+)', CidadeController.update);
+        this.router.delete('/:id([0-9]+)', CidadeController.delete);
 
     }
 }
