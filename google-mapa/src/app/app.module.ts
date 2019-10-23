@@ -27,12 +27,20 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { CidadeComponent } from './cidade/cidade.component';
 
 
+import { AgmCoreModule } from '@agm/core';
+import { MapaComponent } from './mapa/mapa.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     ClienteComponent,
     ConfirmDialogComponent,
-    CidadeComponent
+    CidadeComponent,
+    MapaComponent
+  
+    
   ],
   imports: [
     BrowserModule,
@@ -53,7 +61,10 @@ import { CidadeComponent } from './cidade/cidade.component';
     MatMenuModule,
     MatProgressBarModule,
     MatSnackBarModule,
-    MatDialogModule
+    MatDialogModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDy6kfY-rVOtJhHStLoPWVYfpAMzcIMJlE'
+    })
   ],
   providers: [],
   entryComponents:[ConfirmDialogComponent],

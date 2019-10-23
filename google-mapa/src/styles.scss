@@ -11,12 +11,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     width: 100%;
 }
 
-mat-sidenav-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.sidenav-container {
+height: 100vh;
 
     mat-sidenav {
         width: 650px;
