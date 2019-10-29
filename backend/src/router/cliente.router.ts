@@ -1,7 +1,7 @@
 import { Router } from "express";
 import  ClienteController  from '../controller/cliente.controller';
 
-class CidadeRouter{
+class ClienteRouter{
     public router: Router;
 
     constructor() {
@@ -19,4 +19,4 @@ class CidadeRouter{
     }
 }
 
-export default new CidadeRouter().router;
+export default new ClienteRouter().router;

@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
 const cliente_controller_1 = require("../controller/cliente.controller");
-class CidadeRouter {
+class ClienteRouter {
     constructor() {
         this.router = express_1.Router();
         this.init();
@@ -15,5 +15,5 @@ class CidadeRouter {
         this.router.delete('/:id([0-9]+)', cliente_controller_1.default.delete);
     }
 }
-exports.default = new CidadeRouter().router;
+exports.default = new ClienteRouter().router;
 //# sourceMappingURL=cliente.router.js.map
