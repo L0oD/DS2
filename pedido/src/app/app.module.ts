@@ -32,6 +32,9 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ConfirmDialogComponent } from './_components/confirm-dialog/confirm-dialog.component';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatTabsModule} from '@angular/material/tabs';
+import { TotalPedidoPipe } from './_pipes/total-pedido.pipe';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +46,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     PedidoComponent,
     TabelaprecoComponent,
     VendedorComponent,
-    ConfirmDialogComponent
+    ConfirmDialogComponent,
+    TotalPedidoPipe
   ],
   imports: [
     BrowserModule,
@@ -69,7 +73,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatSnackBarModule,
     MatDialogModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatTabsModule
   ],
   providers: [],
   entryComponents:[ConfirmDialogComponent],
